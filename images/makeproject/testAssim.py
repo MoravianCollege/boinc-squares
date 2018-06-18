@@ -2,6 +2,11 @@
 
 import sys, tarfile, os
 
+"""
+This program does the assimilation for Boinc. 
+It creates a master file of squares and adds the results of all of the work to the file.
+:return:
+"""
 
 if sys.argv[1]!='--error':
 
