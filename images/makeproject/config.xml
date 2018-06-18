@@ -98,7 +98,7 @@
             <cmd>file_deleter -d 3</cmd>
         </daemon>
         <daemon>
-            <cmd>script_assimilator --app boinc2docker --script "boinc2docker_assimilator files"</cmd>
+            <cmd>script_assimilator --app boinc2docker --script "testAssim.py files"</cmd>
         </daemon>
         <daemon>
             <cmd>script_validator --app boinc2docker --init_script testVal.py --compare_script testValComp.py</cmd>

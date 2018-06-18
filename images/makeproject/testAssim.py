@@ -12,10 +12,10 @@ if sys.argv[1]!='--error':
 
 	filename = "/root/project/bin/mastersquare.csv" 
 
-	if !os.path.exists(filename):
-		append_write = 'w'
-	else: 
+	if os.path.exists(filename):
 		append_write = 'a'
+	else: 
+		append_write = 'w'
 
 	master = open(filename, append_write)
         os.system("tar xzf " + str(sys.argv[1]))
