@@ -1,9 +1,14 @@
 #!/usr/bin/env python
-import sys
+import sys, os, os.path, subprocess
 
 """
 This program is a trivial validator that always passes.
 This shows where the standard validation happens within the program.
 """
 
-sys.exit(0)
+if sys.argv[1]!='--error':
+
+    for arg in sys.argv:
+        print(arg)
+
+    sys.exit(0)
