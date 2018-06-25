@@ -15,14 +15,14 @@ def checkFile(filePath):
 
         if os.path.exists(filePath): 
                 append_write = 'a'
-	else: 
+        else: 
                 append_write = 'w'
 
         return append_write
 
 if sys.argv[1]!='--error':
 
-	masterS = "/root/project/bin/mastersquare.csv" 
+        masterS = "/root/project/bin/mastersquare.csv" 
         masterC = "/root/project/bin/mastercube.csv" 
 
         os.system("tar xzf " + str(sys.argv[1]))
