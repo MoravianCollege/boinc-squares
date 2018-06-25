@@ -12,6 +12,6 @@ for job in range(int(sys.argv[1])):
     start = job * 1000
     end = start + 999
     command = "python app.py " + str(start) + " " + str(end)
-    b2d.boinc2docker_create_work("wbrandes/boinc:v8", command)
+    b2d.boinc2docker_create_work("hauuuug/cube:v3", command)
 
 
